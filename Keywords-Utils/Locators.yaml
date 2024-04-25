@@ -1,0 +1,12 @@
+#user_login_page
+login_username: id=user-name
+login_password: id=password
+login_button: id=login-button
+login_logo: class=login_logo
+login_error_msg: class=error-message-container
+#inventory_page
+inventory_item_price: class=inventory_item_price
+inventory_add_to_cart: id=add-to-cart-sauce-labs-backpack
+inventory_header_text: class=app_logo
+inventory_shopping_cart: class=shopping_cart_link
+inventory_image: class=inventory_item_img

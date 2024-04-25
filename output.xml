@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-25T00:46:11.839724" rpa="false" schemaversion="5">
+<suite id="s1" name="Inventory Page" source="C:\Users\Bryan\PycharmProjects\Portfolio-TestAutomation-RobotFramwork\Test-Cases\Inventory_Page.robot">
+<test id="s1-t1" name="Add To Cart Items" line="8">
+<kw name="Go To Sauce Lab Login Page" owner="Login_Page_Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-25T00:46:12.077082" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-25T00:46:12.077082" elapsed="3.973796"/>
+</kw>
+<status status="PASS" start="2024-04-25T00:46:12.077082" elapsed="3.973796"/>
+</kw>
+<kw name="User Login As Standard User" owner="Login_Page_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-25T00:46:16.052873" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>${login_username}</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-25T00:46:16.051875" elapsed="0.146874"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-25T00:46:16.199771" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${login_password}</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-25T00:46:16.198749" elapsed="0.118185"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-25T00:46:16.316934" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-25T00:46:16.316934" elapsed="0.104430"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${inventory_header_text}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-25T00:46:16.421364" elapsed="0.024940"/>
+</kw>
+<status status="PASS" start="2024-04-25T00:46:16.051875" elapsed="0.401435"/>
+</kw>
+<kw name="Add To Cart Button Should Be Visible" owner="Inventory_Page_Keywords">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-04-25T00:46:16.474311" level="INFO">Element 'id=add-to-cart-sauce-labs-backpack' is displayed.</msg>
+<arg>${inventory_add_to_cart}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-25T00:46:16.454356" elapsed="0.019955"/>
+</kw>
+<status status="PASS" start="2024-04-25T00:46:16.454356" elapsed="0.020953"/>
+</kw>
+<kw name="Add To Cart Item" owner="Inventory_Page_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-25T00:46:16.475309" level="INFO">Clicking button 'id=add-to-cart-sauce-labs-backpack'.</msg>
+<arg>${inventory_add_to_cart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-25T00:46:16.475309" elapsed="0.051842"/>
+</kw>
+<status status="PASS" start="2024-04-25T00:46:16.475309" elapsed="0.051842"/>
+</kw>
+<status status="PASS" start="2024-04-25T00:46:12.077082" elapsed="4.450069"/>
+</test>
+<status status="PASS" start="2024-04-25T00:46:11.839724" elapsed="4.688397"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Inventory Page">Inventory Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
